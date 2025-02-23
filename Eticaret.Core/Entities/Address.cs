@@ -20,9 +20,9 @@ namespace Eticaret.Core.Entities
         [Display(Name = "Teslimat Adresi")]
         public bool IsDeliveryAddress { get; set; }
         [Display(Name = "Kayıt Tarihi"), ScaffoldColumn(false)]
-        public DateTime CreateDate { get; set; } = DateTime.Now;
+        public DateTime CreateDate { get; set; } 
         [ScaffoldColumn(false)]
-        public Guid? AddressGuid { get; set; } = Guid.NewGuid();
+        public Guid? AddressGuid { get; set; } 
         public int? AppUserId { get; set; }
         public AppUser? AppUser { get; set; }
     }

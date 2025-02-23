@@ -58,6 +58,8 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                address.AddressGuid = Guid.NewGuid();
+                address.CreateDate = DateTime.Now;
                 _context.Add(address);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
