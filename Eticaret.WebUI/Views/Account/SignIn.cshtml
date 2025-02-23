@@ -12,6 +12,7 @@
                 <img src="/Img/SiteLogo2.png" alt="Site Logo" class="mb-3" width="72">
             </div>
             <h1 class="h4 mb-3 text-center">Üye Girişi</h1>
+            <form asp-action="SignIn" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-floating mb-3">
@@ -40,6 +41,7 @@
                 <a href="/Account/SignUp" class="text-decoration-none">Üye Ol</a> |
                 <a href="/Account/PasswordRenew" class="text-decoration-none">Şifremi Unuttum</a>
             </div>
+            </form>
         </main>
     </div>
 </div>
