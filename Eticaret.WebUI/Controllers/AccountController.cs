@@ -22,7 +22,6 @@ namespace Eticaret.WebUI.Controllers
         {
             _service = service;
             _serviceOrder = serviceOrder;
-
         }
 
         [Authorize]
